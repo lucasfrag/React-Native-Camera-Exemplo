@@ -1,8 +1,10 @@
 import React, { PureComponent } from 'react';
-import { AppRegistry, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, ToastAndroid } from 'react-native';
 import { RNCamera } from 'react-native-camera';
+import CameraRoll from "@react-native-community/cameraroll";
 
 export default class App extends PureComponent {
+
   render() {
     return (
       <View style={styles.container}>
@@ -25,13 +27,10 @@ export default class App extends PureComponent {
             buttonPositive: 'Ok',
             buttonNegative: 'Cancel',
           }}
-          onGoogleVisionBarcodesDetected={({ barcodes }) => {
-            console.log(barcodes);
-          }}
         />
         <View style={{ flex: 0, flexDirection: 'row', justifyContent: 'center' }}>
           <TouchableOpacity onPress={this.takePicture.bind(this)} style={styles.capture}>
-            <Text style={{ fontSize: 14 }}> SNAP </Text>
+            <Text style={{ fontSize: 14 }}> TIRAR FOTO </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -40,9 +39,18 @@ export default class App extends PureComponent {
 
   takePicture = async () => {
     if (this.camera) {
-      const options = { quality: 0.5, base64: true };
+      const options = { quality: 1 };
       const data = await this.camera.takePictureAsync(options);
-      console.log(data.uri);
+      
+      console.log("[React Native Camera] Caminho da imagem no cache: " + data.uri);
+
+    
+      // Salvando a imagem no armazenamento do sistema
+      CameraRoll.save(data.uri);
+      console.log("[React Native CameraRoll] Imagem salva com sucesso! Acesse a Galeria para visualiza-la.")
+      // Ira abrir um pequeno alerta para o usuário saber que a imagem foi salva
+      ToastAndroid.show("Imagem salva com sucesso!", ToastAndroid.SHORT);
+
     }
   };
 }
