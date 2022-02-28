@@ -1,5 +1,5 @@
 # React Native Camera Exemplo
-Aplicativo criado para exemplificar o uso das bibliotecas <b>React Native Camera</b> em uma aplicação React Native.
+Aplicativo criado para exemplificar o uso das bibliotecas <b>React Native Camera</b> e <b>React Native CameraRoll</b> em uma aplicação React Native.
 
 ## Instalação 🚀
 1. Clone esse repositório ou faça o download dos arquivos
@@ -25,7 +25,7 @@ Os resultados obtidos ao testar a biblioteca em cada versão foram:
 - Versão 4.0.0: a partir dessa versão até a v4.2.0, o aplicativo é encerrado assim que ele é aberto. ❌
 - Versão 3.44.3: câmera funcionando! ✔️
 
-## Criando um novo projeto 📁
+### Criando um novo projeto com React Native Camera 📁
 Todas as versões foram testadas na arquitetura de 2022 do React Native <b>(versão 0.67)</b> e também na antiga arquitetura <b>(versão 0.66)</b>.
 Ambas arquiteturas apresentaram o mesmo resultado.
 
@@ -35,10 +35,14 @@ Caso você deseje iniciar um projeto novo e seguir o processo de instalação de
 Se você fizer a instalação via comando `npm install react-native-camera --save`, será necessário remover a biblioteca da pasta `node_modules` e mudar a versão da biblioteca nos arquivos `package.json` e `package-lock.json`, e só então executar o comando `npm install`.
 Outra alternativa, seria apontar o número da versão no comando `npm install`.
 
+## React Native CameraRoll ✔️
+A biblioteca foi testada na versão mais atualizada até então <b>(V4.1.2)</b> e não apresentou nenhum problema no uso.
+
 ## Capturas de tela 📸
-<img width="300" src="https://github.com/lucasfrag/React-Native-Camera-Exemplo/blob/master/Screenshots/01.png" >
+<img width="300" src="https://github.com/lucasfrag/React-Native-Camera-Exemplo/blob/master/Screenshots/02.png" >
 
 ## Desenvolvido com... 👨‍💻
 
 * [React Native](https://reactnative.dev)
-* [React Native Camera](https://github.com/andpor/react-native-sqlite-storage)
+* [React Native Camera](https://react-native-camera.github.io/react-native-camera/docs/installation)
+* [React Native CameraRoll](https://github.com/react-native-cameraroll/react-native-cameraroll)
