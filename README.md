@@ -1,5 +1,5 @@
 # React Native Camera Exemplo
-Aplicativo criado para exemplificar o uso das bibliotecas <b>React Native Camera</b> e <b>React Native CameraRoll</b> em uma aplicação React Native.
+Aplicativo criado para exemplificar o uso das bibliotecas <b>React Native Camera</b> em uma aplicação React Native.
 
 ## Instalação
 1. Clone esse repositório ou faça o download dos arquivos
