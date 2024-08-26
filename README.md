@@ -46,3 +46,9 @@ A biblioteca foi testada na versão mais atualizada até então <b>(V4.1.2)</b> 
 * [React Native](https://reactnative.dev)
 * [React Native Camera](https://react-native-camera.github.io/react-native-camera/docs/installation)
 * [React Native CameraRoll](https://github.com/react-native-cameraroll/react-native-cameraroll)
+
+## Vídeo tutorial no YouTube ▶️
+- React Native Camera - Instalação, configuração e uso da biblioteca: https://youtu.be/8dGiP6EXcJQ?si=Q6Yl8Rt-9jTLAd8M
+- React Native Camera - Corrigindo erro "deprecated-react-native-prop-types": https://youtu.be/_ASMHMkQysk?si=g-OG6xQguYMD2qFs
+- React Native CameraRoll - Instalação, configuração e uso da biblioteca: https://youtu.be/_3Ms_OtIvSg?si=Ps-xZgou5aE7wMVB
+
