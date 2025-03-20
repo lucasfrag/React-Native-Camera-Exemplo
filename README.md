@@ -1,4 +1,4 @@
-# 🚀 React Native Camera Exemplo
+# 🚀 React Native Camera - Aula
 Aplicativo criado para exemplificar o uso das bibliotecas <b>React Native Camera</b> e <b>React Native CameraRoll</b> em uma aplicação React Native.
 
 ### ⚠️ ATENÇÃO!!!
